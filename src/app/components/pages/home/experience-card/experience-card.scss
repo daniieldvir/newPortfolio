@@ -46,6 +46,10 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     flex-shrink: 0;
+
+                    &.logo-bg {
+                        background-color: black;
+                    }
                 }
 
                 .details {

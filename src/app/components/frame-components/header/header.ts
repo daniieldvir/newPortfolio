@@ -14,7 +14,7 @@ export class Header {
   protected readonly isDarkMode = signal(false);
 
   protected readonly navLinks = signal([
-    { label: 'Home', path: '/', icon: 'heroHome' },
+    { label: 'Overview', path: '/', icon: 'heroIdentification' },
     { label: 'Projects', path: '/projects', icon: 'heroCodeBracket' },
     { label: 'Experience', path: '/experience', icon: 'heroBriefcase' },
     { label: 'About', path: '/about', icon: 'heroUser' },

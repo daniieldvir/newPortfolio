@@ -16,7 +16,7 @@
         <!-- Contact info -->
         <div class="profile-contact">
             <p>Contact me</p>
-        
+
             <div class="contact-item">
                 <ng-icon name="heroDevicePhoneMobile" size="20"></ng-icon>
                 <a [href]="'tel:' + contact().phone">{{ contact().phone }}</a>
@@ -36,6 +36,11 @@
                 <i [ngClass]="link.icon"></i>
             </a>
             }
+
+            <a href="/assets/cv/Daniel_Dvir_CV.pdf" download>
+                <app-button-arrow text="Download CV" icon="heroArrowDownCircle" path="/assets/cv/Daniel_Dvir_CV.pdf" />
+              </a>
+              
         </div>
     </div>
 </app-card>

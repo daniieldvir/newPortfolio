@@ -28,7 +28,7 @@
                 aspect-ratio: 16 / 9;
                 border-radius: 12px;
                 overflow: hidden;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                box-shadow: 0 4px 6px var(--project-tag-shadow-color);
 
                 .project-image {
                     width: 100%;
@@ -76,7 +76,7 @@
                     margin-top: 4px;
 
                     .project-tag {
-                        background: var(--background-color); // Assuming variable exists, or use semi-transparent
+                        background: var(--background-color);
                         color: var(--primary-color, #4f46e5); // Fallback
                         padding: 4px 10px;
                         border-radius: 6px;
@@ -84,7 +84,7 @@
                         font-weight: 600;
                         text-decoration: none;
                         transition: background 0.2s;
-                        border: 1px solid rgba(0, 0, 0, 0.05);
+                        border: 1px solid var(--project-tag-border-color);
 
                         &:hover {
                             background: var(--primary-color, #4f46e5);

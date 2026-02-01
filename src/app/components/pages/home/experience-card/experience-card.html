@@ -6,13 +6,13 @@
 
 
     <div class="experience-list">
-        @for (exp of experience(); track exp.year) {
+        @for (exp of experience(); track exp.period) {
         <div class="experience-item">
-            <span class="year">{{ exp.year }}</span>
+            <span class="year">{{ exp.period }}</span>
 
             <div class="company-info">
-                <div class="company-logo" [style.background-image]="'url(' + exp.logo + ')'"
-                    [style.background-color]="exp.logoBg || 'transparent'"></div>
+                <div class="company-logo" [ngClass]="exp.logoBg ? 'logo-bg' : ''"
+                    [style.background-image]="'url(' + exp.logo + ')'"></div>
 
                 <div class="details">
                     <span class="company-name">{{ exp.company }}</span>

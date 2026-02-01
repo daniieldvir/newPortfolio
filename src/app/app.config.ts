@@ -2,18 +2,19 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/
 import { provideRouter } from '@angular/router';
 import { provideIcons } from '@ng-icons/core';
 import {
+  heroArrowDownCircle,
   heroArrowRightCircle,
+  heroBriefcase,
   heroCodeBracket,
+  heroDevicePhoneMobile,
   heroEnvelope,
   heroGlobeAlt,
   heroHome,
+  heroIdentification,
   heroMoon,
   heroServer,
   heroSun,
   heroUser,
-  heroDevicePhoneMobile,
-  heroBriefcase
-
 } from '@ng-icons/heroicons/outline';
 import { provideStore } from '@ngxs/store';
 import { routes } from './app.routes';
@@ -37,6 +38,9 @@ export const appConfig: ApplicationConfig = {
       heroGlobeAlt,
       heroDevicePhoneMobile,
       heroBriefcase,
+      heroArrowDownCircle,
+      heroIdentification
+
     }),
   ]
 };

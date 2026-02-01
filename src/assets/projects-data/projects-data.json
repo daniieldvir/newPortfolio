@@ -33,6 +33,11 @@
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1769953732/daniiel/1769431335079_wqvdtm.jpg",
         "tags": [
             {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/task-flow/"
+            },
+            {
                 "label": "Front",
                 "full": "Frontend Source Code",
                 "link": "https://github.com/daniieldvir/task-flow"
@@ -41,31 +46,6 @@
                 "label": "Back",
                 "full": "Backend Source Code",
                 "link": "https://github.com/daniieldvir/task-flow-backend"
-            },
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/task-flow/"
-            }
-        ]
-    },
-    {
-        "projectName": "Pokemon Evolution",
-        "description": "React app showing Pokémon by evolution with front/back images, shiny mode, abilities, moves, and light/dark mode.",
-        "team": "Individual",
-        "mainTechnology": "React",
-        "styling": "CSS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1658649018/daniiel/pokemon-evolution_amz0n0.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/PokemonEvolution"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/PokemonEvolution"
             }
         ]
     },
@@ -101,11 +81,6 @@
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1639937591/daniiel/Screen_Shot_2021-12-19_at_20.11.41_czt0nz.png",
         "tags": [
             {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://rentme-bnb.herokuapp.com/"
-            },
-            {
                 "label": "Code",
                 "full": "Source Code",
                 "link": "https://github.com/daniieldvir/rent-me.git"
@@ -129,29 +104,6 @@
                 "label": "Code",
                 "full": "Source Code",
                 "link": "https://github.com/daniieldvir/smadi"
-            }
-        ]
-    },
-    {
-        "projectName": "Bitcoin",
-        "description": "Angular app for Bitcoin transfers using the Bitcoin API.",
-        "team": "Individual",
-        "mainTechnology": "Angular",
-        "styling": "CSS",
-        "otherTechnologies": [
-            "Session Storage"
-        ],
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1643201790/daniiel/Screen_Shot_2022-01-26_at_14.55.44_vejpmh.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/bit/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/bit"
             }
         ]
     },
@@ -200,26 +152,6 @@
                 "label": "Code",
                 "full": "Source Code",
                 "link": "https://github.com/daniieldvir/recipes-book"
-            }
-        ]
-    },
-    {
-        "projectName": "Demo WhatsApp",
-        "description": "React demo WhatsApp app with searchable chats and mobile responsive interface.",
-        "team": "Individual",
-        "mainTechnology": "React",
-        "styling": "SASS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1647532271/daniiel/Screen_Shot_2022-03-17_at_17.50.36_lqjb11.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://whatsapp-13511.web.app/#/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/whatsapp"
             }
         ]
     }

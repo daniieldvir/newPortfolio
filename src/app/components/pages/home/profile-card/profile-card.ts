@@ -2,6 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgIconComponent } from '@ng-icons/core';
+import { ButtonArrow } from '../../../shared/button-arrow/button-arrow';
 import { Card } from '../../../shared/card/card';
 
 export interface SocialLink {
@@ -12,7 +13,7 @@ export interface SocialLink {
 
 @Component({
   selector: 'app-profile-card',
-  imports: [Card, NgClass, RouterModule, NgIconComponent],
+  imports: [Card, NgClass, RouterModule, NgIconComponent, ButtonArrow],
   templateUrl: './profile-card.html',
   styleUrl: './profile-card.scss',
 })
@@ -40,5 +41,12 @@ export class ProfileCard {
     email: 'daniieldvir2406@gmail.com',
     phone: '0545586006',
   });
+
+  public downloadCV() {
+    const link = document.createElement('a');
+    link.href = '/assets/cv/Daniel_Dvir_CV.pdf';
+    link.download = 'Daniel_Dvir_CV.pdf';
+    link.click();
+  }
 
 }
