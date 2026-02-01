@@ -1,1 +1,27 @@
-<p>project-details works!</p>
+@if (project()) {
+<app-card class="project-card">
+    <div class="image-container">
+        <img [src]="project()!.img" [alt]="project()!.projectName" class="project-image" />
+        <div class="image-gradient"></div>
+    </div>
+
+    <div class="card-content">
+        <h3 class="project-title">{{ project()!.projectName }}</h3>
+        <p class="project-description">{{ project()!.description }}</p>
+
+        <div class="tech-tags">
+            @for (tag of project()!.tags; track tag.label) {
+            <a [href]="tag.link" target="_blank" rel="noopener noreferrer" [attr.title]="tag.full" class="quick-link">
+                @if (tag.label === 'Code' || tag.label === 'Front') {
+                <ng-icon class="icon" name="heroCodeBracket" size="20" />
+                } @else if (tag.label === 'Back') {
+                <ng-icon class="icon" name="heroServer" size="20" />
+                } @else if (tag.label === 'Website') {
+                <ng-icon class="icon" name="heroGlobeAlt" size="20" />
+                }
+            </a>
+            }
+        </div>
+    </div>
+</app-card>
+}

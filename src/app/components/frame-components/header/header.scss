@@ -1,6 +1,6 @@
 .header-nav {
     background-color: var(--background-color);
-    padding: 1rem;
+    padding: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,13 +27,19 @@
             gap: 8px;
             padding: 8px;
             border-radius: 8px;
+            transition: background 0.2s ease;
 
             a {
                 color: var(--text-color);
                 text-decoration: none;
+                transition: color 0.2s ease;
             }
 
             &:hover {
+                background: var(--button-hover-color);
+            }
+
+            &:has(a.active) {
                 background: var(--button-hover-color);
             }
         }

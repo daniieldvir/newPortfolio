@@ -3,11 +3,14 @@ export interface Project {
   description: string
   team: string
   mainTechnology: string
-  backend: string
-  database: string
   styling: string
-  otherTechnologies: string[]
+  otherTechnologies?: string[]
   img: string
-  website: string
-  sourceCode: string
+  tags: Tag[]
+}
+
+export interface Tag {
+  label: string
+  full: string
+  link: string
 }

@@ -1,1 +1,12 @@
-<p>projects works!</p>
+<div class="projects-container">
+    <header class="page-header">
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-subtitle">A showcase of my work, experiments, and creative solutions</p>
+    </header>
+
+    <div class="projects-grid">
+        @for (project of projects(); track project.projectName) {
+        <app-project-details [project]="project" />
+        }
+    </div>
+</div>

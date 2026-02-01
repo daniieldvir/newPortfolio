@@ -1,20 +1,40 @@
 <app-card class="profile-card">
     <div class="profile-content">
-        <div class="profile-image-container">
-            <img src="https://res.cloudinary.com/disku3v4j/image/upload/v1646307805/daniiel/13726_10206525158264095_4610679800752306461_n_pg81m4.jpg"
-                alt="Profile" class="profile-img">
-        </div>
-        <div class="profile-info">
-            <h1>{{ name() }} <span class="wave">👋</span></h1>
-            <p class="bio" [innerHTML]="bio()">
-
-            <div class="social-links">
-                @for (link of socialLinks(); track link.url) {
-                <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <i [ngClass]="link.icon"></i>
-                </a>
-                }
+        <!-- Image + Name + Wave -->
+        <div class="profile-header">
+            <div class="profile-image-container">
+                <img [src]="profileImageUrl()" alt="Profile" class="profile-img" />
             </div>
+            <div class="profile-info-header">
+                <h1>{{ name() }} <span class="wave">👋</span></h1>
+                <p class="bio" [innerHTML]="bio()"></p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Contact info -->
+        <div class="profile-contact">
+            <p>Contact me</p>
+            <div class="contact-item">
+                <ng-icon name="heroEnvelope" size="20"></ng-icon>
+                <a [href]="'mailto:' + contact().email">{{ contact().email }}</a>
+            </div>
+            <div class="contact-item">
+                <ng-icon name="heroDevicePhoneMobile" size="20"></ng-icon>
+                <a [href]="'tel:' + contact().phone">{{ contact().phone }}</a>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Social links -->
+        <div class="social-links">
+            @for (link of socialLinks(); track link.url) {
+            <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <i [ngClass]="link.icon"></i>
+            </a>
+            }
         </div>
     </div>
 </app-card>

@@ -5,14 +5,19 @@ import {
   heroArrowRightCircle,
   heroCodeBracket,
   heroEnvelope,
+  heroGlobeAlt,
   heroHome,
   heroMoon,
+  heroServer,
   heroSun,
   heroUser,
+  heroDevicePhoneMobile
+
 } from '@ng-icons/heroicons/outline';
 import { provideStore } from '@ngxs/store';
 import { routes } from './app.routes';
 import { ProjectsState } from './state/projects/projects.state';
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -27,6 +32,10 @@ export const appConfig: ApplicationConfig = {
       heroSun,
       heroMoon,
       heroArrowRightCircle,
+      heroServer,
+      heroGlobeAlt,
+      heroDevicePhoneMobile,
+     
     }),
   ]
 };

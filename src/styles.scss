@@ -18,6 +18,9 @@ body {
     background-attachment: fixed;
 }
 
+h2 {
+    font-size: 22px;
+}
 
 :root {
     --app-background-color: linear-gradient(49deg, rgba(174, 238, 223, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -55,7 +58,7 @@ body {
     --card-shadow-color: #000000;
 
     // social links
-    --social-link-color: #d1d5db;              
-    --social-link-hover-color: #ffffff;       
+    --social-link-color: #d1d5db;
+    --social-link-hover-color: #ffffff;
     --social-link-hover-background-color: #374151;
 }

@@ -1,6 +1,5 @@
 .experience-card {
     padding: 1.5rem;
-    border-radius: 12px;
     background-color: var(--background-color);
     color: var(--text-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -14,11 +13,8 @@
         align-items: center;
 
         h2 {
-            font-size: 1.8rem;
             font-weight: bold;
         }
-
-       
     }
 
 

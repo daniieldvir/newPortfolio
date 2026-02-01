@@ -17,7 +17,6 @@ export class Header {
     { label: 'Home', path: '/', icon: 'heroHome' },
     { label: 'About', path: '/about', icon: 'heroUser' },
     { label: 'Projects', path: '/projects', icon: 'heroCodeBracket' },
-    { label: 'Contact', path: '/contact', icon: 'heroEnvelope' },
   ]);
 
 
