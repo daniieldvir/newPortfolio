@@ -2,6 +2,7 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/
 import { provideRouter } from '@angular/router';
 import { provideIcons } from '@ng-icons/core';
 import {
+  heroArrowRightCircle,
   heroCodeBracket,
   heroEnvelope,
   heroHome,
@@ -25,6 +26,7 @@ export const appConfig: ApplicationConfig = {
       heroEnvelope,
       heroSun,
       heroMoon,
+      heroArrowRightCircle,
     }),
   ]
 };

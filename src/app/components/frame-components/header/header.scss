@@ -20,22 +20,21 @@
         margin: 0;
         padding: 0;
 
+
         li {
             display: flex;
+            align-items: center;
             gap: 8px;
+            padding: 8px;
+            border-radius: 8px;
 
             a {
                 color: var(--text-color);
                 text-decoration: none;
-                font-weight: bold;
             }
 
             &:hover {
-                color: lightblue;
-
-                a {
-                    color: lightblue;
-                }
+                background: var(--button-hover-color);
             }
         }
 
@@ -46,5 +45,6 @@
         border: none;
         cursor: pointer;
         color: var(--text-color);
+
     }
 }

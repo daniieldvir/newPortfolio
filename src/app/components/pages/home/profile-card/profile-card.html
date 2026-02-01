@@ -1,0 +1,20 @@
+<app-card class="profile-card">
+    <div class="profile-content">
+        <div class="profile-image-container">
+            <img src="https://res.cloudinary.com/disku3v4j/image/upload/v1646307805/daniiel/13726_10206525158264095_4610679800752306461_n_pg81m4.jpg"
+                alt="Profile" class="profile-img">
+        </div>
+        <div class="profile-info">
+            <h1>{{ name() }} <span class="wave">👋</span></h1>
+            <p class="bio" [innerHTML]="bio()">
+
+            <div class="social-links">
+                @for (link of socialLinks(); track link.url) {
+                <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <i [ngClass]="link.icon"></i>
+                </a>
+                }
+            </div>
+        </div>
+    </div>
+</app-card>
